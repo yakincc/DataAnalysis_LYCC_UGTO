@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Song Recommendations</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='BEE-COMMENDER.png') }}" alt="BEE COMMENDER Logo">
+    </header>
+    <form action="/" method="POST">
+        <input type="text" name="url" placeholder="Enter Spotify URL" required>
+        <input type="submit" value="Get Recommendations">
+    </form>
+</body>
+</html>
