@@ -12,7 +12,7 @@ def home():
         dataframe = model.pipeline(url)
         
         # Pass the dataframe and loading message to the template for rendering
-        return render_template('recommendations.html', recommendations = dataframe.to_html(), loading_message=loading_message)
+        return render_template('recommendations.html', recommendations = dataframe.to_html(), loading_message = None)
     
     return render_template('index.html', loading_message=None)
 
